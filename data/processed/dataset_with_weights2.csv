@@ -1,0 +1,158 @@
+word,state,weight
+numb,hypo,0.57
+frozen,hypo,0.37
+empty,hypo,0.39
+heavy,hypo,0.3
+alone,hypo,0.36
+lonely,hypo,0.49
+disconnected,hypo,0.55
+hopeless,hypo,0.56
+despair,hypo,0.4
+invisible,hypo,0.3
+withdrawn,hypo,0.35
+dissociated,hypo,0.39
+tired,hypo,0.37
+faint,hypo,0.32
+passive,hypo,0.3
+foggy,hypo,0.3
+apathetic,hypo,0.3
+i can’t…,hypo,0.3
+what’s the point?,hypo,0.3
+low,hypo,0.32
+weak,hypo,0.3
+detached,hypo,0.4
+spaced-out,hypo,0.33
+slow,hypo,0.31
+still,hypo,0.3
+muted,hypo,0.36
+distant,hypo,0.31
+blank,hypo,0.38
+vacant,hypo,0.32
+shut down,hypo,0.33
+fatigued,hypo,0.33
+unmotivated,hypo,0.38
+sluggish,hypo,0.3
+dull,hypo,0.33
+uninterested,hypo,0.32
+silent,hypo,0.33
+indifferent,hypo,0.3
+lifeless,hypo,0.38
+exhausted,hypo,0.32
+unresponsive,hypo,0.33
+powerless,hypo,0.38
+isolated,hypo,0.34
+lacking energy,hypo,0.3
+collapsed,hypo,0.36
+drained,hypo,0.32
+flat,hypo,0.31
+lack of will,hypo,0.3
+checked out,hypo,0.3
+can't move,hypo,0.3
+low-spirited,hypo,0.3
+sad,hypo,0.3
+unfeeling,hypo,0.31
+quiet,hypo,0.37
+anxious,hyper,0.68
+angry,hyper,0.5
+panicked,hyper,0.52
+overwhelmed,hyper,0.36
+restless,hyper,0.41
+tight,hyper,0.35
+racing,hyper,0.3
+agitated,hyper,0.65
+frustrated,hyper,0.47
+tense,hyper,0.32
+unsafe,hyper,0.57
+defensive,hyper,0.33
+rigid,hyper,0.3
+chaotic,hyper,0.39
+scattered,hyper,0.3
+i have to…,hyper,0.3
+i’m not safe,hyper,0.37
+something bad will happen,hyper,0.31
+uneasy,hyper,0.56
+jumpy,hyper,0.3
+short-tempered,hyper,0.3
+over-alert,hyper,0.3
+fidgety,hyper,0.33
+hot,hyper,0.3
+wound up,hyper,0.3
+hyper,hyper,0.3
+pressured,hyper,0.37
+impatient,hyper,0.46
+snappy,hyper,0.3
+on edge,hyper,0.3
+irritated,hyper,0.46
+fearful,hyper,0.6
+annoyed,hyper,0.47
+overthinking,hyper,0.3
+spinning,hyper,0.3
+alarmed,hyper,0.53
+suspicious,hyper,0.37
+heart pounding,hyper,0.33
+clenched,hyper,0.38
+sweaty,hyper,0.38
+out of control,hyper,0.36
+rushing,hyper,0.3
+breathing fast,hyper,0.3
+keyed up,hyper,0.3
+high-strung,hyper,0.3
+hyperactive,hyper,0.31
+jittery,hyper,0.35
+aggressive,hyper,0.45
+startled,hyper,0.41
+urgent,hyper,0.33
+can't relax,hyper,0.42
+safe,flow,0.56
+calm,flow,0.57
+open,flow,0.3
+engaged,flow,0.3
+curious,flow,0.3
+connected,flow,0.3
+clear,flow,0.4
+light,flow,0.3
+creative,flow,0.32
+playful,flow,0.33
+peaceful,flow,0.4
+present,flow,0.3
+trusting,flow,0.35
+grounded,flow,0.5
+relaxed,flow,0.4
+warm,flow,0.32
+i’m okay,flow,0.3
+i can handle this,flow,0.3
+i belong,flow,0.3
+confident,flow,0.37
+content,flow,0.3
+joyful,flow,0.3
+centered,flow,0.3
+steady,flow,0.32
+hopeful,flow,0.3
+loved,flow,0.3
+secure,flow,0.4
+bright,flow,0.32
+inspired,flow,0.3
+supportive,flow,0.36
+gentle,flow,0.38
+friendly,flow,0.35
+comfortable,flow,0.34
+patient,flow,0.3
+kind,flow,0.3
+compassionate,flow,0.3
+stable,flow,0.38
+adaptable,flow,0.3
+accepting,flow,0.3
+serene,flow,0.31
+focused,flow,0.34
+harmonious,flow,0.3
+grateful,flow,0.3
+cooperative,flow,0.3
+happy,flow,0.3
+rested,flow,0.3
+optimistic,flow,0.3
+easygoing,flow,0.3
+flexible,flow,0.3
+attentive,flow,0.3
+balanced,flow,0.3
+resilient,flow,0.33
+at ease,flow,0.3
