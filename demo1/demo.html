@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>State Selection Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h2 { color: #333; }
+    .word-option { margin: 8px 0; }
+    button { margin-top: 20px; padding: 8px 12px; }
+    .result { margin-top: 20px; font-weight: bold; }
+    .bar { height: 20px; margin: 5px 0; background: lightgray; position: relative; border-radius: 5px; }
+    .bar span { position: absolute; left: 5px; top: 0; color: white; font-size: 12px; }
+  </style>
+</head>
+<body>
+
+  <h2>Select Words & Intensities</h2>
+  <form id="wordForm">
+    <div id="wordsContainer"></div>
+    <button type="button" onclick="submitSelection()">Submit</button>
+  </form>
+
+  <div id="output" class="result"></div>
+
+  <script>
+    // Load words from Flask backend
+    async function loadWords() {
+      let response = await fetch("http://127.0.0.1:5000/words");
+      let words = await response.json();
+
+      let container = document.getElementById("wordsContainer");
+      words.forEach(word => {
+        let div = document.createElement("div");
+        div.classList.add("word-option");
+        div.innerHTML = `
+          <label><input type="checkbox" name="word" value="${word}"> ${word}</label>
+          Intensity:
+          <select name="intensity-${word}">
+            <option value="0" selected>0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        `;
+        container.appendChild(div);
+      });
+    }
+
+    // Calculate & display results
+    async function submitSelection() {
+      let selected = [];
+      const checkboxes = document.querySelectorAll("input[name='word']:checked");
+
+      checkboxes.forEach(cb => {
+        let word = cb.value;
+        let intensity = document.querySelector(`select[name='intensity-${word}']`).value;
+        selected.push({word: word, intensity: parseInt(intensity)});
+      });
+
+      let response = await fetch("http://127.0.0.1:5000/predict", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(selected)
+      });
+
+      let result = await response.json();
+      renderResults(result);
+    }
+
+    function renderResults(result) {
+      let resultHTML = "<h3>Results:</h3>";
+      for (let state in result) {
+        let pct = result[state].toFixed(1);
+        let color = state === "hypo" ? "blue" : state === "hyper" ? "red" : "green";
+        resultHTML += `
+          <div>${state.toUpperCase()}: ${pct}%</div>
+          <div class="bar">
+            <div style="width:${pct}%; background:${color}; height:100%; border-radius:5px;">
+              <span>${pct}%</span>
+            </div>
+          </div>
+        `;
+      }
+      document.getElementById("output").innerHTML = resultHTML;
+    }
+
+    // Load words on page load
+    loadWords();
+  </script>
+
+</body>
+</html>
