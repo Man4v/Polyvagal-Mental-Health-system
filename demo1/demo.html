@@ -6,8 +6,34 @@
   <style>
     body { font-family: Arial, sans-serif; margin: 20px; }
     h2 { color: #333; }
-    .word-option { margin: 8px 0; }
-    button { margin-top: 20px; padding: 8px 12px; }
+    .word-option { margin: 8px 0;}
+    .word-btn {
+        margin-right: 150px;
+        margin-bottom: 30px;
+        padding: 8px 14px;
+        border: none;
+        border-radius: 6px;
+        background: #ddd;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background 0.2s;
+    }
+
+    .word-btn.selected {
+        background: #4CAF50;  /* green when selected */
+        color: white;
+    }
+
+    .intensity-slider {
+        margin: 5px 0 15px 0;
+    }
+    #wordsContainer {
+        display: flex;
+        flex-wrap: wrap;       /* wrap to next row if too many */
+        gap: 10px;             /* spacing between buttons */
+        margin: 10px 0;
+    }
+    button { margin-top: 20px; padding: 8px 12px;}
     .result { margin-top: 20px; font-weight: bold; }
     .bar { height: 20px; margin: 5px 0; background: lightgray; position: relative; border-radius: 5px; }
     .bar span { position: absolute; left: 5px; top: 0; color: white; font-size: 12px; }
@@ -34,41 +60,58 @@
         let div = document.createElement("div");
         div.classList.add("word-option");
         div.innerHTML = `
-          <label><input type="checkbox" name="word" value="${word}"> ${word}</label>
-          Intensity:
-          <select name="intensity-${word}">
-            <option value="0" selected>0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-        </select>
+        <button type="button" style="border-radius:20px;" class="word-btn" data-word="${word}" onclick="toggleWord(this)">
+            ${word}
+        </button>
+        <div class="intensity-slider" id="slider-${word}" style="display:none;">
+            Intensity:
+            <input type="range" name="intensity-${word}" min="0" max="5" value="0" step="1" 
+                oninput="this.nextElementSibling.value = this.value">
+            <output>0</output>
+        </div>
         `;
+
         container.appendChild(div);
       });
     }
 
+    function toggleWord(button) {
+    let word = button.dataset.word;
+    let sliderDiv = document.getElementById(`slider-${word}`);
+
+    if (button.classList.contains("selected")) {
+        // Deselect
+        button.classList.remove("selected");
+        sliderDiv.style.display = "none";
+    } else {
+        // Select
+        button.classList.add("selected");
+        sliderDiv.style.display = "block";
+    }
+    }
+
     // Calculate & display results
     async function submitSelection() {
-      let selected = [];
-      const checkboxes = document.querySelectorAll("input[name='word']:checked");
+    let selected = [];
+    const buttons = document.querySelectorAll(".word-btn.selected");
 
-      checkboxes.forEach(cb => {
-        let word = cb.value;
-        let intensity = document.querySelector(`select[name='intensity-${word}']`).value;
+    buttons.forEach(btn => {
+        let word = btn.dataset.word;
+        let intensity = document.querySelector(`input[name='intensity-${word}']`).value;
         selected.push({word: word, intensity: parseInt(intensity)});
-      });
+    });
 
-      let response = await fetch("http://127.0.0.1:5000/predict", {
+    let response = await fetch("http://127.0.0.1:5000/predict", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify(selected)
-      });
+    });
 
-      let result = await response.json();
-      renderResults(result);
+    let result = await response.json();
+    renderResults(result);
     }
+
+
 
     function renderResults(result) {
       let resultHTML = "<h3>Results:</h3>";
