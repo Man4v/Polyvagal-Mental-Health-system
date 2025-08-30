@@ -1,0 +1,158 @@
+word,hypo,hyper,flow
+accepting,0.0,0.0,0.8
+adaptable,0.0,0.0,0.79
+aggressive,0.0,0.84,0.0
+agitated,0.0,0.88,0.0
+alarmed,0.0,0.86,0.0
+alone,0.82,0.0,0.0
+angry,0.0,0.85,0.0
+annoyed,0.0,0.84,0.0
+anxious,0.0,0.89,0.0
+apathetic,0.8,0.0,0.0
+at ease,0.0,0.0,0.81
+attentive,0.0,0.0,0.81
+balanced,0.0,0.0,0.81
+blank,0.83,0.0,0.0
+breathing fast,0.0,0.8,0.0
+bright,0.0,0.0,0.81
+calm,0.0,0.0,0.86
+can't move,0.8,0.0,0.0
+can't relax,0.0,0.83,0.0
+centered,0.0,0.0,0.81
+chaotic,0.0,0.83,0.0
+checked out,0.8,0.0,0.0
+clear,0.0,0.0,0.83
+clenched,0.0,0.83,0.0
+collapsed,0.82,0.0,0.0
+comfortable,0.0,0.0,0.82
+compassionate,0.0,0.0,0.8
+confident,0.0,0.0,0.82
+connected,0.0,0.0,0.81
+content,0.0,0.0,0.8
+cooperative,0.0,0.0,0.79
+creative,0.0,0.0,0.81
+curious,0.0,0.0,0.8
+defensive,0.0,0.82,0.0
+despair,0.83,0.0,0.0
+detached,0.83,0.0,0.0
+disconnected,0.86,0.0,0.0
+dissociated,0.83,0.0,0.0
+distant,0.81,0.0,0.0
+drained,0.81,0.0,0.0
+dull,0.82,0.0,0.0
+easygoing,0.0,0.0,0.8
+empty,0.83,0.0,0.0
+engaged,0.0,0.0,0.79
+exhausted,0.81,0.0,0.0
+faint,0.81,0.0,0.0
+fatigued,0.82,0.0,0.0
+fearful,0.0,0.87,0.0
+fidgety,0.0,0.82,0.0
+flat,0.81,0.0,0.0
+flexible,0.0,0.0,0.8
+focused,0.0,0.0,0.82
+foggy,0.81,0.0,0.0
+friendly,0.0,0.0,0.82
+frozen,0.82,0.0,0.0
+frustrated,0.0,0.84,0.0
+gentle,0.0,0.0,0.83
+grateful,0.0,0.0,0.8
+grounded,0.0,0.0,0.85
+happy,0.0,0.0,0.81
+harmonious,0.0,0.0,0.8
+heart pounding,0.0,0.82,0.0
+heavy,0.8,0.0,0.0
+high-strung,0.0,0.81,0.0
+hopeful,0.0,0.0,0.81
+hopeless,0.86,0.0,0.0
+hot,0.0,0.81,0.0
+hyper,0.0,0.81,0.0
+hyperactive,0.0,0.81,0.0
+i belong,0.0,0.0,0.8
+i can handle this,0.0,0.0,0.8
+i can’t…,0.79,0.0,0.0
+i have to…,0.0,0.78,0.0
+impatient,0.0,0.84,0.0
+indifferent,0.81,0.0,0.0
+inspired,0.0,0.0,0.8
+invisible,0.81,0.0,0.0
+irritated,0.0,0.84,0.0
+isolated,0.82,0.0,0.0
+i’m not safe,0.0,0.82,0.0
+i’m okay,0.0,0.0,0.81
+jittery,0.0,0.82,0.0
+joyful,0.0,0.0,0.81
+jumpy,0.0,0.81,0.0
+keyed up,0.0,0.79,0.0
+kind,0.0,0.0,0.81
+lack of will,0.8,0.0,0.0
+lacking energy,0.81,0.0,0.0
+lifeless,0.83,0.0,0.0
+light,0.0,0.0,0.81
+lonely,0.82,0.0,0.0
+loved,0.0,0.0,0.81
+low,0.81,0.0,0.0
+low-spirited,0.79,0.0,0.0
+muted,0.82,0.0,0.0
+numb,0.86,0.0,0.0
+on edge,0.0,0.78,0.0
+open,0.0,0.0,0.81
+optimistic,0.0,0.0,0.81
+out of control,0.0,0.82,0.0
+over-alert,0.0,0.8,0.0
+overthinking,0.0,0.8,0.0
+overwhelmed,0.0,0.82,0.0
+panicked,0.0,0.85,0.0
+passive,0.79,0.0,0.0
+patient,0.0,0.0,0.81
+peaceful,0.0,0.0,0.83
+playful,0.0,0.0,0.82
+powerless,0.83,0.0,0.0
+present,0.0,0.0,0.8
+pressured,0.0,0.82,0.0
+quiet,0.82,0.0,0.0
+racing,0.0,0.8,0.0
+relaxed,0.0,0.0,0.83
+resilient,0.0,0.0,0.82
+rested,0.0,0.0,0.8
+restless,0.0,0.83,0.0
+rigid,0.0,0.81,0.0
+rushing,0.0,0.8,0.0
+sad,0.81,0.0,0.0
+safe,0.0,0.0,0.86
+scattered,0.0,0.8,0.0
+secure,0.0,0.0,0.83
+serene,0.0,0.0,0.81
+short-tempered,0.0,0.8,0.0
+shut down,0.82,0.0,0.0
+silent,0.82,0.0,0.0
+slow,0.81,0.0,0.0
+sluggish,0.79,0.0,0.0
+snappy,0.0,0.8,0.0
+something bad will happen,0.0,0.81,0.0
+spaced-out,0.82,0.0,0.0
+spinning,0.0,0.81,0.0
+stable,0.0,0.0,0.83
+startled,0.0,0.83,0.0
+steady,0.0,0.0,0.81
+still,0.79,0.0,0.0
+supportive,0.0,0.0,0.82
+suspicious,0.0,0.82,0.0
+sweaty,0.0,0.83,0.0
+tense,0.0,0.81,0.0
+tight,0.0,0.82,0.0
+tired,0.82,0.0,0.0
+trusting,0.0,0.0,0.82
+uneasy,0.0,0.86,0.0
+unfeeling,0.81,0.0,0.0
+uninterested,0.81,0.0,0.0
+unmotivated,0.83,0.0,0.0
+unresponsive,0.82,0.0,0.0
+unsafe,0.0,0.86,0.0
+urgent,0.0,0.82,0.0
+vacant,0.81,0.0,0.0
+warm,0.0,0.0,0.81
+weak,0.81,0.0,0.0
+what’s the point?,0.77,0.0,0.0
+withdrawn,0.82,0.0,0.0
+wound up,0.0,0.81,0.0
