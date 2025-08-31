@@ -103,6 +103,7 @@ aggressive,hyper,0.45
 startled,hyper,0.41
 urgent,hyper,0.33
 can't relax,hyper,0.42
+exasperate,hyper,0.3
 safe,flow,0.56
 calm,flow,0.57
 open,flow,0.3
