@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Speech Emotion & State Analyzer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Polyvagal State Analyzer (Demo)</h1>
+
+    <!-- Record Buttons and Status -->
+    <div class="controls">
+      <button id="recordBtn">🎙️ Start Recording</button>
+      <button id="stopBtn" disabled>⏹️ Stop</button>
+      <span id="status"></span>
+    </div>
+
+    <!-- Results -->
+    <div class="results">
+      <h3>Transcribed Text:</h3>
+      <p id="transcription">---</p>
+
+      <h3>Audio Emotion Model Result:</h3>
+      <p id="emotion">---</p>
+
+      <h3>Word Matches in Lexicon:</h3>
+      <ul id="matches"></ul>
+
+      <h3>State Percentages:</h3>
+      <canvas id="stateChart" width="400" height="200"></canvas>
+      <p id="dominant">---</p>
+    </div>
+  </div>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

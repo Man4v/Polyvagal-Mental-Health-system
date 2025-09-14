@@ -1,2 +1,4 @@
 data/kaggle_speech
-models
+notebooks/speech.ipynb
+.venv
+notebooks/recording.wav
