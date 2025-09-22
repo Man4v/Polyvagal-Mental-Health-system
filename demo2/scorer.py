@@ -7,7 +7,7 @@ from sentence_transformers import SentenceTransformer
 
 
 class RobertaAnchorScorer:
-    def __init__(self, lexicon_csv_path, threshold=0.7):
+    def __init__(self, lexicon_csv_path, threshold=0.68):
         # Load lexicon in format: word,hypo,hyper,flow
         df = pd.read_csv(lexicon_csv_path)
         self.lexicon = {}

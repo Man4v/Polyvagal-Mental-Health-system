@@ -15,7 +15,15 @@
       <button id="stopBtn" disabled>⏹️ Stop</button>
       <span id="status"></span>
     </div>
-
+    
+    <div class="upload-section">
+      <h3>Or Upload an Audio File:</h3>
+      <input type="file" id="audioFile" accept="audio/*">
+      <button id="uploadBtn">📂 Upload & Analyze</button>
+      <br><br>
+      <audio id="audioPlayer" controls style="display:none; width:100%;"></audio>
+    </div>
+    
     <!-- Results -->
     <div class="results">
       <h3>Transcribed Text:</h3>

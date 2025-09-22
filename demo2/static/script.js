@@ -10,6 +10,66 @@ const emotionEl = document.getElementById("emotion");
 const matchesEl = document.getElementById("matches");
 const dominantEl = document.getElementById("dominant");
 
+const uploadBtn = document.getElementById("uploadBtn");
+const audioFileInput = document.getElementById("audioFile");
+const audioPlayer = document.getElementById("audioPlayer");
+
+uploadBtn.addEventListener("click", async () => {
+  const file = audioFileInput.files[0];
+  if (!file) {
+    alert("Please select a file first.");
+    return;
+  }
+
+  let formData = new FormData();
+  formData.append("file", file);
+
+  statusEl.textContent = "⏳ Uploading...";
+  statusEl.style.color = "orange";
+
+  try {
+    let response = await fetch("/upload_audio", { method: "POST", body: formData });
+    let result = await response.json();
+
+    transcriptionEl.innerText = result.transcription || "---";
+    emotionEl.innerText = result.emotion || "---";
+    dominantEl.innerText = "Dominant State: " + (result.dominant_state || "None");
+
+    matchesEl.innerHTML = "";
+    result.matched_words.forEach(m => {
+      let li = document.createElement("li");
+      li.textContent = `${m.token} → ${m.matched_anchor} (sim: ${m.similarity.toFixed(2)})`;
+      matchesEl.appendChild(li);
+    });
+
+    stateChart.data.datasets[0].data = [
+      result.state_percentages.hypo,
+      result.state_percentages.hyper,
+      result.state_percentages.flow
+    ];
+    stateChart.update();
+
+    statusEl.textContent = "✅ File processed!";
+    statusEl.style.color = "green";
+
+  } catch (err) {
+    console.error("Error uploading audio:", err);
+    statusEl.textContent = "❌ Failed to process file";
+    statusEl.style.color = "red";
+  }
+});
+
+audioFileInput.addEventListener("change", () => {
+  const file = audioFileInput.files[0];
+  if (file) {
+    const url = URL.createObjectURL(file);
+    audioPlayer.src = url;
+    audioPlayer.style.display = "block";  // show the player
+  } else {
+    audioPlayer.style.display = "none";
+  }
+});
+
 // Chart setup
 let ctx = document.getElementById("stateChart").getContext("2d");
 let stateChart = new Chart(ctx, {

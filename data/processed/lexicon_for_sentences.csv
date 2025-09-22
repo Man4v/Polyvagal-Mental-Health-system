@@ -11,6 +11,7 @@ anxious,0.0,0.89,0.0
 apathetic,0.8,0.0,0.0
 at ease,0.0,0.0,0.81
 attentive,0.0,0.0,0.81
+attuned,0.0,0.0,0.8
 balanced,0.0,0.0,0.81
 blank,0.83,0.0,0.0
 breathing fast,0.0,0.8,0.0
@@ -26,6 +27,7 @@ clenched,0.0,0.83,0.0
 collapsed,0.82,0.0,0.0
 comfortable,0.0,0.0,0.82
 compassionate,0.0,0.0,0.8
+composed,0.0,0.0,0.8
 confident,0.0,0.0,0.82
 connected,0.0,0.0,0.81
 content,0.0,0.0,0.8
@@ -36,8 +38,10 @@ defensive,0.0,0.82,0.0
 despair,0.83,0.0,0.0
 detached,0.83,0.0,0.0
 disconnected,0.86,0.0,0.0
+disconnectedness,0.83,0.0,0.0
 dissociated,0.83,0.0,0.0
 distant,0.81,0.0,0.0
+downcast,0.81,0.0,0.0
 drained,0.81,0.0,0.0
 dull,0.82,0.0,0.0
 easygoing,0.0,0.0,0.8
@@ -54,12 +58,14 @@ flat,0.81,0.0,0.0
 flexible,0.0,0.0,0.8
 focused,0.0,0.0,0.82
 foggy,0.81,0.0,0.0
+frantic,0.0,0.84,0.0
 friendly,0.0,0.0,0.82
 frozen,0.82,0.0,0.0
 frustrated,0.0,0.84,0.0
 gentle,0.0,0.0,0.83
 grateful,0.0,0.0,0.8
 grounded,0.0,0.0,0.85
+groundedness,0.0,0.0,0.84
 happy,0.0,0.0,0.81
 harmonious,0.0,0.0,0.8
 heart pounding,0.0,0.82,0.0
@@ -86,16 +92,21 @@ jittery,0.0,0.82,0.0
 joyful,0.0,0.0,0.81
 jumpy,0.0,0.81,0.0
 keyed up,0.0,0.79,0.0
+keyed-up,0.0,0.78,0.0
 kind,0.0,0.0,0.81
 lack of will,0.8,0.0,0.0
 lacking energy,0.81,0.0,0.0
+lethargic,0.8,0.0,0.0
 lifeless,0.83,0.0,0.0
 light,0.0,0.0,0.81
+listless,0.8,0.0,0.0
 lonely,0.85,0.0,0.0
 loved,0.0,0.0,0.81
 low,0.81,0.0,0.0
 low-spirited,0.79,0.0,0.0
+mindful,0.0,0.0,0.81
 muted,0.82,0.0,0.0
+nervousness,0.0,0.84,0.0
 numb,0.86,0.0,0.0
 on edge,0.0,0.78,0.0
 open,0.0,0.0,0.81
@@ -135,6 +146,7 @@ something bad will happen,0.0,0.81,0.0
 spaced-out,0.82,0.0,0.0
 spinning,0.0,0.81,0.0
 stable,0.0,0.0,0.83
+stagnant,0.8,0.0,0.0
 startled,0.0,0.83,0.0
 steady,0.0,0.0,0.81
 still,0.79,0.0,0.0
@@ -155,6 +167,8 @@ urgent,0.0,0.82,0.0
 vacant,0.81,0.0,0.0
 warm,0.0,0.0,0.81
 weak,0.81,0.0,0.0
+weary,0.82,0.0,0.0
 what’s the point?,0.77,0.0,0.0
 withdrawn,0.82,0.0,0.0
+worked-up,0.0,0.79,0.0
 wound up,0.0,0.81,0.0

@@ -52,7 +52,17 @@
       "low-spirited",
       "sad",
       "unfeeling",
-      "quiet"
+      "quiet",
+      "lethargic",
+      "weary",
+      "drained",
+      "dull",
+      "downcast",
+      "unmotivated",
+      "listless",
+      "lifeless",
+      "stagnant",
+      "disconnectedness"
     ],
     "hyper": [
       "anxious",
@@ -107,7 +117,17 @@
       "urgent",
       "can't relax",
       "exasperated",
-      "exasperate"
+      "exasperate",
+      "jittery",
+      "uneasy",
+      "fidgety",
+      "frantic",
+      "alarmed",
+      "pressured",
+      "restless",
+      "nervousness",
+      "keyed-up",
+      "worked-up"
     ],
     "flow": [
       "safe",
@@ -162,7 +182,17 @@
       "attentive",
       "balanced",
       "resilient",
-      "at ease"
+      "at ease",
+      "serene",
+      "centered",
+      "groundedness",
+      "harmonious",
+      "balanced",
+      "mindful",
+      "stable",
+      "composed",
+      "joyful",
+      "attuned"
     ]
   }
   

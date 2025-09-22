@@ -52,6 +52,16 @@ low-spirited,hypo,0.79
 sad,hypo,0.81
 unfeeling,hypo,0.81
 quiet,hypo,0.82
+lethargic,hypo,0.8
+weary,hypo,0.82
+drained,hypo,0.81
+dull,hypo,0.82
+downcast,hypo,0.81
+unmotivated,hypo,0.83
+listless,hypo,0.8
+lifeless,hypo,0.83
+stagnant,hypo,0.8
+disconnectedness,hypo,0.83
 anxious,hyper,0.89
 angry,hyper,0.85
 panicked,hyper,0.85
@@ -105,6 +115,16 @@ urgent,hyper,0.82
 can't relax,hyper,0.83
 exasperated,hyper,0.84
 exasperate,hyper,0.79
+jittery,hyper,0.82
+uneasy,hyper,0.86
+fidgety,hyper,0.82
+frantic,hyper,0.84
+alarmed,hyper,0.86
+pressured,hyper,0.82
+restless,hyper,0.83
+nervousness,hyper,0.84
+keyed-up,hyper,0.78
+worked-up,hyper,0.79
 safe,flow,0.86
 calm,flow,0.86
 open,flow,0.81
@@ -158,3 +178,13 @@ attentive,flow,0.81
 balanced,flow,0.81
 resilient,flow,0.82
 at ease,flow,0.81
+serene,flow,0.81
+centered,flow,0.81
+groundedness,flow,0.84
+harmonious,flow,0.8
+balanced,flow,0.81
+mindful,flow,0.81
+stable,flow,0.83
+composed,flow,0.8
+joyful,flow,0.81
+attuned,flow,0.8
